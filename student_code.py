@@ -5,10 +5,10 @@ def part_1_graph():
     Returns a directed graph represented as a list of sets.
     """
     graph = [
-        {1, 4},
-        {2},
-        {3, 4},
-        {1},
+        {'b', 'e'},
+        {'c'},
+        {'d', 'e'},
+        {'b'},
         set()
     ]
     return graph
@@ -17,11 +17,11 @@ def part_2_graph():
     Returns a directed graph represented as a list of lists.
     """
     graph = [
-        [0, 1, 4],
-        [2],
-        [0, 3, 4],
+        ['a', 'b', 'e'],
+        ['c'],
+        ['a', 'd', 'e'],
         [],
-        [3]
+        ['d']
     ]
     return graph
 def part_3_graph():
@@ -29,9 +29,9 @@ def part_3_graph():
     Returns a weighted directed graph represented as a list of dicts.
     """
     graph = [
-        {0: 8, 1: 1, 4: 4},
-        {2: 3},
-        {0: 2, 4: 4},
+        {'a': 8, 'b': 1, 'e': 4},
+        {'c': 3},
+        {'a': 2, 'e': 4},
         {},
         {}
     ]
@@ -41,11 +41,11 @@ def part_4_graph():
     Returns a directed graph represented as a dict of sets.
     """
     graph = {
-        0: {0, 1, 4},
-        1: {2},
-        2: {0},
-        3: set(),
-        4: set()
+        'a': {'a', 'b', 'e'},
+        'b': {'c'},
+        'c': {'a'},
+        'd': set(),
+        'e': set()
     }
     return graph
 def part_5_graph():
@@ -53,10 +53,10 @@ def part_5_graph():
     Returns a weighted directed graph represented as a dict of dicts.
     """
     graph = {
-        0: {1: 5},
-        1: {4: 3},
-        2: {},
-        3: {},
-        4: {0: 6, 1: 2}
+        'a': {'b': 5},
+        'b': {'e': 3},
+        'c': {},
+        'd': {},
+        'e': {'a': 6, 'b': 2}
     }
     return graph
