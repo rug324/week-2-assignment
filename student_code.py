@@ -37,7 +37,7 @@ def part_3_graph():
     ]
     return graph
 def part_4_graph():
-     """
+    """
     Returns a directed graph represented as a dict of sets.
     """
     graph = {
